@@ -8,11 +8,9 @@
 </html>
 <body>
   <div id="app">
-    <select id="selector">
-      <option v-for="song in songs" v-bind:value="song.id">{{song.title}}</option>
-    </select>
-    <div class="tameImpala rock psycodelia contemporary pop">
-    <a href="" class="circle-btn-xsSmall circleBtn"></a>
+
+    <div v-for="song in songs" class="">
+    <div class="circle-btn-xsSmall circleBtn"  v-bind:width="song.id" v-bind:height="song.id" v-bind:style="{ height: song.id + 'px', width: song.id + 'px', backgroundImage:  ' url(' + song.cover + ')' }"></div>
       <div class="audioWrap">
         <div class="albumCover"></div>
 
@@ -21,15 +19,12 @@
             <div id="progressBar"></div>
             <span id="currentTime">0:00</span>
             <span id="fullDuration">0:00</span>
-
           </div>
           <div id="mediaButtons">
             <h3 class="artistTitle">{{songs.song1.title}}</h3>
             <h3 class="SongTitle">{{songs.song1.artist}}</h3>
             <button type="button" id="playButton" class="play" onclick="playOrPause()"></button>
             <input id="volumeSlider" type="range" min="0" max="100" value="100" step="1">
-
-
           </div>
         </nav>
 

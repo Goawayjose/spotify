@@ -7,67 +7,15 @@ body {
   display: block;
 }
 
-a.circle-btn-xsSmall {
+.circle-btn-xsSmall {
   display: flex;
-  position: relative;
   background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-a.circle-btn-small {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-a.circle-btn-medium {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-a.circle-btn-large {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-
-a.circle-btn-veryLarge {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-
-a.circle-btn-extraLarge {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-
-a.circle-btn-extraExtraLarge {
-  position: absolute;
-  background: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
+  border-radius: 250px;
+  background-size: cover;
 }
 
 .audioWrap {
-  display: block;
+  display: none;
   left: 0px;
   bottom: -10px;
   position: relative;
